@@ -1,5 +1,5 @@
-# FILL IN INFO ABOUT YOUR GAME HERE. 
+# Final Proj
 
-DO NOT LEAVE IT LIKE THIS!!!
+CubeCubeCube
 
-Please? Please, give me content. I'm begging you. It's not that hard. Thanks.
+
