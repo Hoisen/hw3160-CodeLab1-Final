@@ -37,6 +37,11 @@ bool jump = false;
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("worldTwo");
         }
+        
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("world");
+        }
     }
 
     void FixedUpdate()

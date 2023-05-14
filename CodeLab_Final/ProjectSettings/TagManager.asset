@@ -8,6 +8,8 @@ TagManager:
   - Door
   - Floor
   - Final
+  - pipe
+  - start
   layers:
   - Default
   - TransparentFX

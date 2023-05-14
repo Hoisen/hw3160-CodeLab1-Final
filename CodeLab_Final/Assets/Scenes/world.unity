@@ -1897,7 +1897,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh33804
+  m_Name: pb_Mesh90418
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2106,6 +2106,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8559197949270819891, guid: e6487a8c4c4054cf8aa25c2bdef3d5fe, type: 3}
+      propertyPath: groundCheck
+      value: 
+      objectReference: {fileID: 508107856}
+    - target: {fileID: 8559197949270819891, guid: e6487a8c4c4054cf8aa25c2bdef3d5fe, type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 8559197949270819901, guid: e6487a8c4c4054cf8aa25c2bdef3d5fe, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2198,6 +2206,11 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!4 &508107856 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4742675614572516659, guid: e6487a8c4c4054cf8aa25c2bdef3d5fe, type: 3}
+  m_PrefabInstance: {fileID: 481048568}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &728889827
 GameObject:
   m_ObjectHideFlags: 0
@@ -4745,7 +4758,7 @@ GameObject:
   - component: {fileID: 1573275193}
   - component: {fileID: 1573275192}
   - component: {fileID: 1573275191}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
