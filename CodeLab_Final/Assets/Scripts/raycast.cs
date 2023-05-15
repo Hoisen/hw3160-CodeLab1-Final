@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.SceneManagement;
@@ -16,6 +17,8 @@ public class raycast : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
     private bool isGround;
+
+    public TextMeshPro canvasText;
     
     //Raycast
     private Ray ray;
@@ -53,6 +56,7 @@ public class raycast : MonoBehaviour
         {
             SceneManager.LoadScene("world");
         }
+
         
         //Raycast Hit
         
@@ -61,7 +65,7 @@ public class raycast : MonoBehaviour
         //Debug.DrawRay(ray.origin, ray.direction * 2, Color.blue);
         CheckIfHitted();
 
-        if (transform.position.y < -45)
+        if (transform.position.y < -50)
         {
             SceneManager.LoadScene("world");
         }
@@ -93,7 +97,7 @@ public class raycast : MonoBehaviour
         {
             int index = Random.Range(2, 5);
             //Debug.Log("Trans to scene: " + index);
-            SceneManager.LoadScene(index);
+            SceneManager.LoadScene(index+1);
         }
 
         if (other.tag == "first")
@@ -109,6 +113,11 @@ public class raycast : MonoBehaviour
         if (other.tag == "start")
         {
             SceneManager.LoadScene("SampleScene");
+        }
+        
+        if (other.tag == "Final")
+        {
+            SceneManager.LoadScene("End");
         }
     }
 }
